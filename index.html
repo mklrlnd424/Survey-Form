@@ -1,5 +1,125 @@
-<html>
-<h1 id="title">This is a survey about your music taste</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+h1 {
+    text-align: center;
+    background-color: #87CEFA; 
+   
+}
 
+p {
+    text-align: center;
+    font-size: 18px;
+    background-color: #87CEFA;
+}
+body {
+    font-family: Verdana;
+    padding: 0% 10% 0% 10%;
+    
+}
+label {
+    font-size: 15px;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+form {
+    background-color: #778899;
+    padding: 20px 20px 80% 20px;
+}
+
+#button_area {
+    float: left;
+    padding: 10px;
+    
+}
+textarea {
+    display: block;
+    width: 100%;
+}
+input[type=text] {
+    width:100%;
+}
+input[type=email] {
+    width:100%;
+}
+input[type=number] {
+    width:100%;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="title">This is a Survey About Some Stuff</h1>
+
+<p id="description">This is a survey where you can tell us about some stuff.</p>
+
+<form id="survey-form">
+    
+    <label id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Name" required>
+    <label id="email-label">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+    <label id="number-label">Number:</label>
+        <input type="number" name="number" id="number" min=1 max=10000000000 placeholder="Enter Number" required>
+    <br>
+
+    <div id="button area">
+        <label id="sport_type" for="sports">Choose Your Favorite Sport to Watch:</label>
+
+        <select name="sports" id="dropdown">
+            <option value="football">Football</option>
+            <option value="baseball">Baseball</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+            <option value="golf">Golf</option>
+            <option value="mma">MMA</option>
+            <option value="nascar">Nascar</option>
+            <option value="boxing">Boxing</option>
+        </select><br>
+    <br>
+    </div>
+
+    <div id="button_area">
+        <label id="sports2play">What sports do you like to play?</label>
+        <input type="radio" name="sports_play" value="football">Football<br>
+        <input type="radio" name="sports_play" value="baseball">Baseball<br>
+        <input type="radio" name="sports_play" value="basketball">Basketball<br>
+        <input type="radio" name="sports_play" value="tennis">Tennis<br>
+        <input type="radio" name="sports_play" value="golf">Golf<br>
+        <input type="radio" name="sports_play" value="mma">MMA<br>
+        <input type="radio" name="sports_play" value="nascar">Nascar<br>
+        <input type="radio" name="sports_play" value="boxing">Boxing<br>
+    </div>
+
+    <div id="button_area">
+    <label for="bodytype">Awesome Pics. Great Size. Look:</label>
+        <input type="checkbox" name="body_type1" value="thick"><strong>Thick.</strong><br>
+        <input type="checkbox" name="body_type2" value="solid"><strong>Solid.</strong><br>
+        <input type="checkbox" name="body_type3" value="tight"><strong>Tight.</strong><br>
+        <input type="checkbox" name="body_type4" value="thanks">Thanks for the motivation.<br>
+        <input type="checkbox" name="body_type5" value="progress">Keep us all posted<br>
+        <input type="checkbox" name="body_type6" value="pics_and_vids">progress pics & vid clips.<br>
+        <input type="checkbox" name="body_type7" value="freakin">Wanna see how freakin'<br>
+        <input type="checkbox" name="body_type8" value="huge"><strong>Huge</strong><br>
+        <input type="checkbox" name="body_type9" value="solid2"><strong>Solid</strong><br>
+        <input type="checkbox" name="body_type10" value="thick2"><strong>Thick</strong><br>
+        <input type="checkbox" name="body_type11" value="tight2">and <strong>Tight</strong> you can get.<br>
+        <input type="checkbox" name="body_type12" value="thx">Thanks for the motivation.
+    </div>
+
+    <div id="button_area">
+        <label id="additional_comments_label">Additional Comments:</label>
+        <textarea placeholder="Additional Comments"></textarea>
+        <input type="submit" id="submit">
+    </div>
+
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
 
 </html>
